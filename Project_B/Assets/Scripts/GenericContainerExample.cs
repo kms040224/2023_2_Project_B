@@ -15,15 +15,15 @@ public class GenericContainerExample : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if(Input.GetKeyDown(KeyCode.Alpha1))                   //키보드 1 버튼
         {
-            intContainer.Add(Random.Range(0, 100));
+            intContainer.Add(Random.Range(0, 100));            //0~100 랜덤 (int)
             DisplayContainerItems(intContainer);
-        }
+        }                                                      //키보드 2 버튼
         if(Input.GetKeyDown(KeyCode.Alpha2))
         {
-            string randomString = " item " + Random.Range(0, 100);
-            stringContainer.Add(randomString);
+            string randomString = " item " + Random.Range(0, 100);     //0~100 랜덤(String)
+            stringContainer.Add(randomString);                         //문자열 -> item 0~100
             DisplayContainerItems(stringContainer);
         }
     }
